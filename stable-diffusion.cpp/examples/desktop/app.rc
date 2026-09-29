@@ -1,0 +1,31 @@
+#include <winres.h>
+#include "resource.h"
+
+IDI_APP ICON "app.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "SD-Studio - offline FLUX.2 klein image generation (stable-diffusion.cpp)"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "SD-Studio"
+            VALUE "OriginalFilename", "SD-Studio.exe"
+            VALUE "ProductName", "SD-Studio"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
